@@ -24,7 +24,7 @@ code segment
 		mov cx,4
 	s:	
 		mov si,0
-		push cx
+		push cx	;使用栈暂存cx的值，实现双循环
 		mov cx,3
 	s1:	mov al,[bx+si]
 		and al,11011111b

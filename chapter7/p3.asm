@@ -17,9 +17,9 @@ code segment
 		mov bx,0
 		
 		mov cx,6
-	s:	mov al,ds:[bx+2]
+	s:	mov al,[bx+2]
 		and al,11011111b
-		mov ds:[bx+2],al
+		mov [bx+2],al
 		add bx,16
 		loop s
 		

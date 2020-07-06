@@ -15,7 +15,7 @@ code segment
 		mov bx,0
 		
 		mov cx,16
-	s: 	mov al,[si+bx]
+	s: 	mov al,[si+bx]	;寄存器si、di的使用
 		mov [di+bx],al
 		inc bx
 		loop s
