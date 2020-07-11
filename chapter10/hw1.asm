@@ -2,7 +2,7 @@
 assume cs:code,ds:data
 
 data segment
-	db 'welcome to nasm!',0
+	db 'welcome to masm!',0
 data ends
 
 code segment
